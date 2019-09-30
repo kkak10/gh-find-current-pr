@@ -1,12 +1,6 @@
 name: Find Current Pull Request
 author: jwalton
 description: Find a PR associated with the current commit.
-inputs:
-  github-token:
-    description: The GitHub token used to create an authenticated client.
-  sha:
-    description: Sha to get PR for.  Defaults to current sha.
-    required: false
 outputs:
   pr:
     description: The PR if one was found. (e.g. '345' for #345)
