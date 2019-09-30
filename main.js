@@ -4,6 +4,8 @@ const { context } = require('@actions/github');
 async function main() {
   const prNumber = context.payload.pull_request.number;
 
+  console.log(prNumber);
+
   if (typeof prNumber !== 'number') {
     throw new Error("pull request number is not found.");
   }
